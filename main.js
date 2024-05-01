@@ -29,8 +29,8 @@ function rollDice() {
   let leaderboardContainer = document.getElementById("leaderboard-container");
 
   // dice rolling animation
-  diceNum1.setAttribute("src", "images/GIF Artists Collective_ Photo.gif");
-  diceNum2.setAttribute("src", "images/GIF Artists Collective_ Photo.gif");
+  diceNum1.setAttribute("src", "images/dice gif2.gif");
+  diceNum2.setAttribute("src", "images/dice gif2.gif");
 
   // Set timeout to simulate dice rolling animation
   setTimeout(() => {
