@@ -14,6 +14,13 @@ function editNames() {
         alert("Please enter valid names for both players.");
         return;
     }
+
+    // Update player names displayed on the webpage
+    document.querySelector("p.Player1").innerHTML = player1;
+    document.querySelector("p.Player2").innerHTML = player2;
+}
+
+
 // Roll dice function
 function rollDice() {
   //  dice images and result element
@@ -33,5 +40,35 @@ function rollDice() {
       let randomNum2 = Math.floor(Math.random() * 6) + 1;
 
        // Update dice images with the result
-      diceNum1.setAttribute('src', 'dice-images/dice' + randomNum1 + '.png');
-      diceNum2.setAttribute('src', 'dice-images/dice' + randomNum2 + '.png');
+      diceNum1.setAttribute('src', 'images/dice' + randomNum1 + '.png');
+      diceNum2.setAttribute('src', 'images/dice' + randomNum2 + '.png');
+
+      // Winner method + display leaderboard
+      if (randomNum1 === randomNum2) {
+        result.innerHTML = "Draw!";
+    } else if (randomNum1 < randomNum2) {
+        result.innerHTML = (player2 + " WINS!");
+        updateLeaderboard(player2);
+    } else {
+        result.innerHTML = (player1 + " WINS!");
+        updateLeaderboard(player1);
+    }
+
+    // Display leaderboard on the webpage
+    displayLeaderboard(leaderboardContainer);
+}, 2500);
+}
+
+// Leaderboard update function
+function updateLeaderboard(player) {
+    leaderboard[player] = (leaderboard[player] || 0) + 1;
+}
+
+// Function to display leaderboard on the webpage
+function displayLeaderboard(container) {
+    container.innerHTML = "<h2>Leaderboard</h2><ul>";
+    for (let player in leaderboard) {
+        container.innerHTML += `<li>${player}: ${leaderboard[player]} wins</li>`;
+    }
+    container.innerHTML += "</ul>";
+}
