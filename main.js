@@ -71,3 +71,12 @@ function displayLeaderboard(container) {
   }
   container.innerHTML += "</ul>";
 }
+//Instructions Function
+function toggleInstructions() {
+  var instructionsContent = document.getElementById("instructionsContent");
+  if (instructionsContent.style.display === "none") {
+    instructionsContent.style.display = "block";
+  } else {
+    instructionsContent.style.display = "none";
+  }
+}

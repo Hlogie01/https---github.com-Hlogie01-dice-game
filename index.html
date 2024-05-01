@@ -11,6 +11,38 @@
     <!--Player -->
     <div class="dice">
       <h1 class="dice-title">Bettle Dice Game</h1>
+      <!--Rules Container-->
+      <div class="rules-container">
+        <div class="button">
+          <button type="button" class="btn" onclick="toggleInstructions()">
+            Instructions
+          </button>
+        </div>
+
+        <div id="instructionsContent" style="display: none">
+          <h2>How to play!</h2>
+          <h3>Moral Lesson of the game</h3>
+          <p>
+            The lesson a person can learn from playing dice is: You don't have
+            any control for things being in your favor when everything depends
+            on chance. Your odds are actual ly against you in dice because
+            instead of the chance being 1:1 as in other games, here they are
+            6:1.
+          </p>
+          <ul>
+            <li>Number of Players: Two!</li>
+            <li>Objective: To have the highest outcome!</li>
+            <li>Gameplay:</li>
+            <li>Players take turns to roll the dice</li>
+            <li>The starting player rolls the dice & conceals the result.</li>
+            <li>If the player's score is the same, it's a tie!</li>
+            <li>
+              The player with the highest score at the end of the game win the
+              game
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="row">
         <div class="col-6">
           <p class="Player1">Player 1</p>
