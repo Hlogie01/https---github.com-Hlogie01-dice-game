@@ -1,6 +1,6 @@
 // initial player names and leaderboard object
-let player1 = "Player1";
-let player2 = "Player2";
+let player1 = "Player 1";
+let player2 = "Player 2";
 let leaderboard = {};
 
 // Edit names function
