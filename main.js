@@ -1,21 +1,21 @@
-// initial player names and leaderboard object
+// player names and leaderboard object
 let player1 = "Player 1";
 let player2 = "Player 2";
 let leaderboard = {};
 
-// Edit names function
+// changing names function
 function editNames() {
   // Prompt users to enter player names
   player1 = prompt("Enter player 1's name");
   player2 = prompt("Enter player 2's name");
 
-  // Check if both names are valid
+  // Validity of names
   if (!player1 || !player2) {
     alert("Please enter valid names for both players.");
     return;
   }
 
-  // Update player names displayed on the webpage
+  // Update on player names displayed on the webpage
   document.querySelector("p.Player1").innerHTML = player1;
   document.querySelector("p.Player2").innerHTML = player2;
 }
@@ -28,7 +28,7 @@ function rollDice() {
   let result = document.querySelector("h1");
   let leaderboardContainer = document.getElementById("leaderboard-container");
 
-  // dice rolling animation
+  // animation on the rolling dice
   diceNum1.setAttribute("src", "images/gif.gif");
   diceNum2.setAttribute("src", "images/gif.gif");
 
@@ -42,7 +42,7 @@ function rollDice() {
     diceNum1.setAttribute("src", "images/dice" + randomNum1 + ".png");
     diceNum2.setAttribute("src", "images/dice" + randomNum2 + ".png");
 
-    // Winner method + display leaderboard
+    // Winner method and display leaderboard
     if (randomNum1 === randomNum2) {
       result.innerHTML = "Draw!";
     } else if (randomNum1 < randomNum2) {
@@ -58,7 +58,7 @@ function rollDice() {
   }, 2500);
 }
 
-// Leaderboard update function
+// update function on leaderboard
 function updateLeaderboard(player) {
   leaderboard[player] = (leaderboard[player] || 0) + 1;
 }
