@@ -13,6 +13,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #36539d;
+  background-image: url(images/IMG_20240501_201631.jpg);
+  background-size: cover;
 }
 
 .dice {
