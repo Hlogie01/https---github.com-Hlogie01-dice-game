@@ -69,6 +69,7 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 5px;
+  font-family: "CustomFont", sans-serif;
 }
 
 /* Responsive styles */

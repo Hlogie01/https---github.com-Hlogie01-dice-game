@@ -30,7 +30,7 @@ function rollDice() {
 
   // dice rolling animation
   diceNum1.setAttribute("src", "images/gif.gif");
-  diceNum2.setAttribute("src", "images/dice gif2.gif");
+  diceNum2.setAttribute("src", "images/gif.gif");
 
   // Set timeout to simulate dice rolling animation
   setTimeout(() => {
