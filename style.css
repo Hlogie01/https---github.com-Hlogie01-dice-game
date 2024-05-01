@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #10126d;
+  background-color: #36539d;
 }
 
 .dice {
@@ -62,36 +62,35 @@ body {
 
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
-    .row {
-        flex-direction: column;
-    }
+  .row {
+    flex-direction: column;
+  }
 
-    .col-6 {
-        width: 100%;
-    }
+  .col-6 {
+    width: 100%;
+  }
 }
 
-
 #leaderboard-container {
-    background-color: #25044281;
-    padding: 15px;
-    border-radius: 5px;
-    margin: 20px auto; 
-    max-width: 400px; 
+  background-color: #5046916c;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px auto;
+  max-width: 400px;
 }
 
 #leaderboard-container h2 {
-    font-size: 20px;
-    color: #fff;
+  font-size: 20px;
+  color: #fff;
 }
 
 #leaderboard-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 #leaderboard-list li {
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: #fff;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #fff;
 }
