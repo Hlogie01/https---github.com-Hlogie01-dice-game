@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("fonts/PokemonGb-RAeo.ttf") format("truetype"),
+    url("fonts/PokemonGb-RAeo.ttf") format("truetype");
+}
+
 body {
-  font-family: Pokémon font;
+  font-family: "CustomFont", sans-serif;
+}
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
