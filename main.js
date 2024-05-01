@@ -42,7 +42,7 @@ function rollDice() {
     diceNum1.setAttribute("src", "images/dice" + randomNum1 + ".png");
     diceNum2.setAttribute("src", "images/dice" + randomNum2 + ".png");
 
-    // Winner method and display leaderboard
+    // Winner outcome and display leaderboard
     if (randomNum1 === randomNum2) {
       result.innerHTML = "Draw!";
     } else if (randomNum1 < randomNum2) {
@@ -53,7 +53,7 @@ function rollDice() {
       updateLeaderboard(player1);
     }
 
-    // Display leaderboard on the webpage
+    // show  leaderboard on the webpage
     displayLeaderboard(leaderboardContainer);
   }, 2500);
 }
@@ -73,7 +73,7 @@ function displayLeaderboard(container) {
 }
 //Instructions Function
 function toggleInstructions() {
-  var instructionsContent = document.getElementById("instructionsContent");
+  let instructionsContent = document.getElementById("instructionsContent");
   if (instructionsContent.style.display === "none") {
     instructionsContent.style.display = "block";
   } else {
