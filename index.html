@@ -2,73 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Dice Game</title>
+    <title>Loading page</title>
+    <!-- the link goes through the folder then the css  -->
+    <!-- please call me if you have issues linking  -->
+    <link rel="stylesheet" href="/css/load.css" />
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <!--Player -->
-    <div class="dice">
-      <h1 class="dice-title">Bettle Dice Game</h1>
-      <!--Rules Container-->
-      <div class="rules-container">
-        <div class="button">
-          <button type="button" class="btn" onclick="toggleInstructions()">
-            Instructions
-          </button>
+    <div class="loaderViewPort">
+      <h1>Bettle Dice Game &copy;</h1>
+      <div id="countdownDisplay"></div>
+      <div class="loader">
+        <div class="side front">
+          <div class="dot"></div>
         </div>
-
-        <div id="instructionsContent" style="display: none">
-          <h2>How to play!</h2>
-
-          <ul>
-            Number of Players: Two!
-            <br />
-            <br />
-            The objective is to have the highest outcome!<br />
-            <br />The starting player rolls the dice & conceals the result.
-            <br />
-            <br />If the player's score is the same, it's a tie!
-            <br />
-            <br />
-            The player with the highest score at the end of the game wins the
-            game!
-            <br />
-          </ul>
+        <div class="side back">
+          <div class="dotContainer">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <p class="Player1">Player 1</p>
-          <img src="images/dice1.png" alt="dice1" class="image1" />
+        <div class="side left">
+          <div class="dotContainer">
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
         </div>
-        <div class="col-6">
-          <p class="Player2">Player 2</p>
-          <img src="images/dice2.png" alt="dice2" class="image2" />
+        <div class="side right">
+          <div class="dotContainer">
+            <div class="subDotContainer">
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="subDotContainer">
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+        </div>
+        <div class="side top">
+          <div class="dotContainer">
+            <div class="subDotContainer">
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="subDotContainer">
+              <div class="dot"></div>
+            </div>
+            <div class="subDotContainer">
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+        </div>
+        <div class="side bottom">
+          <div class="dotContainer">
+            <div class="subDotContainer">
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="subDotContainer">
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="subDotContainer">
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- instruction buttons-->
-    <div class="container">
-      <div class="bottom">
-        <button type="button" class="btn" onclick="rollDice()">
-          Roll Dice
-        </button>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="bottom">
-        <button type="button" class="btn" onclick="editNames()">
-          Select Names
-        </button>
-      </div>
-    </div>
-
-    <!-- leaderboard  -->
-    <div id="leaderboard-container"></div>
-    <script src="main.js"></script>
+    <!-- This is the link to the js file here -->
+    <script src="/js/load.js"></script>
   </body>
 </html>
