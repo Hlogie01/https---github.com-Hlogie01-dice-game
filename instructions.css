@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("fonts/PokemonGb-RAeo.ttf") format("truetype"),
+    url("fonts/PokemonGb-RAeo.ttf") format("truetype");
+}
+
+body {
+  background-color: rgb(47, 116, 190));
+  font-family: "CustomFont", sans-serif;
+}

@@ -5,16 +5,13 @@
 }
 
 body {
-  font-family: "CustomFont", sans-serif;
-}
-
-body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-image: url(images/blue.png);
   background-size: cover;
   background-position: center;
+  font-family: "CustomFont", sans-serif;
 }
 
 .dice {
@@ -109,7 +106,6 @@ body {
 .rules-container {
   color: #fff;
 }
-
 
 .player-name {
   color: #fff;
