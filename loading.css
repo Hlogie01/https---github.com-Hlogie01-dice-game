@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("fonts/PokemonGb-RAeo.ttf") format("truetype"),
+      url("fonts/PokemonGb-RAeo.ttf") format("truetype");
+  }
+  
+  body {
+    font-family: "CustomFont", sans-serif;
+  }
+
+  .loaderViewPort {
+    width: 160rem; /* Adjust the width as needed */
+    aspect-ratio: 1;
+    border-radius: 50%;
+    perspective: 10000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid black;
+    opacity: 1;
+    background-image: url(images/IMG_20240501_201631.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  h1 {
+    position: absolute;
+    top: 40%; /* This controls the height of the h1 */
+    color: white;
+    font-weight: 900;
+    z-index: 1;
+    text-align: center;
+    margin: 0;
+  }
+  #countdownDisplay {
+    position: absolute;
+    top: 60%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    z-index: 1;
+    text-align: center;
+  }
+  
