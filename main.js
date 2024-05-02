@@ -29,7 +29,7 @@ function rollDice() {
   let leaderboardContainer = document.getElementById("leaderboard-container");
 
   // dice rolling animation
-  diceNum1.setAttribute("src", "images/dice gif2.gif");
+  diceNum1.setAttribute("src", "images/gif.gif");
   diceNum2.setAttribute("src", "images/dice gif2.gif");
 
   // Set timeout to simulate dice rolling animation
@@ -67,7 +67,7 @@ function updateLeaderboard(player) {
 function displayLeaderboard(container) {
   container.innerHTML = "<h2>Leaderboard</h2><ul>";
   for (let player in leaderboard) {
-    container.innerHTML += `<li>${player}: ${leaderboard[player]} wins</li>`;
+    container.innerHTML += `<li><span class="player-name">${player}: ${leaderboard[player]} wins</li>`;
   }
   container.innerHTML += "</ul>";
 }
