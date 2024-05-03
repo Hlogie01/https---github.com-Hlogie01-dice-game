@@ -18,6 +18,11 @@ function editNames() {
   // Update on player names displayed on the webpage
   document.querySelector("p.Player1").innerHTML = player1;
   document.querySelector("p.Player2").innerHTML = player2;
+
+  leaderboard = {};
+  let content = "<h2>Leaderboard</h2>";
+  let leaderboardContainer = document.getElementById("leaderboard-container");
+  leaderboardContainer.innerHTML = content;
 }
 
 // Roll dice function
