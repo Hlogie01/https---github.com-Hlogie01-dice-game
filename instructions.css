@@ -5,6 +5,7 @@
 }
 
 body {
-  background-color: rgb(47, 116, 190));
-  font-family: "CustomFont", sans-serif;
+background-image: url(images/blue.png);
+background-size: cover;
+font-family: "CustomFont", sans-serif;
 }
