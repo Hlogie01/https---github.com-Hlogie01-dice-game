@@ -5,20 +5,23 @@
 }
 
 body {
-background-image: url(images/blue.png);
-background-size: cover;
-font-family: "CustomFont", sans-serif;
-color: aliceblue;
+  background-image: url(images/blue.png);
+  background-size: cover;
+  font-family: "CustomFont", sans-serif;
+  color: aliceblue;
 }
 
 button {
-  background: #0981dd;
-  font-family: inherit;
-  padding: 0.3em 1em;
-  font-weight: 900;
-  border: 1px solid black;
-  border-radius: 0.4em;
-  box-shadow: 0.1em 0.1em;
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 18px; /* Adjust font size as needed */
+  border-radius: 8px; /* Adjust border radius as needed */
+  margin-top: 100px; /* Adjust as needed to move buttons lower */
+  background-color: #0981dd; /* Green */
+  color: white;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  transition-duration: 0.4s;
   cursor: pointer;
 }
 
@@ -34,9 +37,14 @@ button:active {
 
 .button-container {
   text-align: center;
-  margin-top: 20px; /* Add margin to the top of the button container */
+  margin-top: 100px; /* Adjust as needed to move buttons lower */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
 }
+
 #begin,
-#back, {
+#back {
   margin-right: 20px;
 }
