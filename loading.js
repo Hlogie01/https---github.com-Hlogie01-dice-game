@@ -1,5 +1,4 @@
 // Use setTimeout to execute a function after a specified delay
-// this is a built-in function in JavaScript
 let countdown = 5; // Change the countdown value to 5
 
 // Display the initial countdown
