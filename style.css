@@ -54,11 +54,9 @@ body {
   justify-content: space-around;
   margin-top: 30px;
 }
-
 .bottom {
   margin-top: 20px;
 }
-
 .btn {
   background-color: #0981dd;
   color: #fff;
@@ -69,7 +67,6 @@ body {
   border-radius: 5px;
   font-family: "CustomFont", sans-serif;
 }
-
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
   .row {
@@ -80,7 +77,6 @@ body {
     width: 100%;
   }
 }
-
 #leaderboard-container {
   background-color: transparent;
   padding: 15px;
@@ -88,17 +84,14 @@ body {
   margin: 20px auto;
   max-width: 400px;
 }
-
 #leaderboard-container h2 {
   font-size: 20px;
   color: #fff;
 }
-
 #leaderboard-list {
   list-style-type: none;
   padding: 0;
 }
-
 #leaderboard-list li {
   font-size: 16px;
   margin-bottom: 8px;
@@ -107,7 +100,20 @@ body {
 .rules-container {
   color: #fff;
 }
-
 .player-name {
   color: #fff;
+}
+#back {
+  background-color: #0981dd;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-family: "CustomFont", sans-serif;
+}
+
+#back:hover {
+  background-color: #075c9f; /* Darker shade of blue on hover */
 }
