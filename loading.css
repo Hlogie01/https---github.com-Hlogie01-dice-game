@@ -47,3 +47,8 @@ h1 {
   z-index: 1;
   text-align: center;
 }
+@media (max-width: 524px) {
+  .loaderViewPort h1 {
+    font-size: 20px;
+  }
+}
