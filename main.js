@@ -85,3 +85,8 @@ function toggleInstructions() {
     instructionsContent.style.display = "none";
   }
 }
+
+
+function goBack() {
+  window.location.href = "instructions.html";
+}
