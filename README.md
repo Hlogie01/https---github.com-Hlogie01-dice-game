@@ -1,3 +1,5 @@
+https://bettle-dice.netlify.app/
+
 Group Capstone Project: Re-Creating a Dice Game
 Overview
 Welcome to our Group Capstone Project, where we aimed to recreate a browser-based dice game with enhanced functionality and improved user experience. The goal of this project was to not only implement the core mechanics of the game but also to elevate its interactivity and visual appeal.
